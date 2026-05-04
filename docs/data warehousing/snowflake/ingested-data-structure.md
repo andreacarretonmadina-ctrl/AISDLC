@@ -3,9 +3,9 @@ Ingested data structure ([*data source prefix*]_[object_name]) 
 
 If you are planning to use **data vault automation** tool that design is given. Each data source object is ingested to own table, but each table has the same structure where:
 
- **Column** | **Description** |
-| --- | --- | --- |
-| **SYS_DATASOURCE** | Name of data source system 
+|**Column** | **Description** |
+| --- | --- | 
+| **SYS_DATASOURCE** | Name of data source system |
 | **SYS_LOADED_BY** | job which populated record 
 | **SYS_LOADED_FORMAT**  |  format in which are stored ingested data. currently only json 
 | **SYS_LOADED_ID** | Extraction timestamp , in UTC time formatted as YYYYMMDDHH24MISS 
