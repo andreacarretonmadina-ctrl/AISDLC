@@ -93,7 +93,7 @@ Every ingestion flow must validate the following three pillars:
 
 * * * * *
 
-### 🤖 AI-Ready Technical Summary
+### AI-Ready Technical Summary
 
 > **Architecture Pattern:** Metadata-Driven Ingestion.
 >

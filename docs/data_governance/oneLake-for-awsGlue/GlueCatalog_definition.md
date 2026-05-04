@@ -41,6 +41,6 @@ The text implies a "matryoshka" style organization of data:
 
 * * * * *
 
-### 💡 Summary:
+### Summary:
 
 > "OneLake for Glue Catalog is our **Data Mesh** enabler. It moves us away from simply sharing 'folders' to sharing **Data Products**. It requires producers to register technical assets in **EDMA** so consumers can discover and use them as managed tables in their own AWS environments."

@@ -3,7 +3,7 @@ Data Architecture: Immutable Ingestion Layer (PSA)
 
 This section defines the standards for the **Persistent Staging Area (PSA)**, the layer responsible for storing all ingested data from source systems.
 
-📌 Core Principles
+Core Principles
 ------------------
 
 -   **Insert-Only Layer:** This is a non-mutable layer. Data is stored as a continuous stream of ingested records without updates or deletions.
@@ -12,7 +12,7 @@ This section defines the standards for the **Persistent Staging Area (PSA)**, th
 
 -   **Ownership & Utilization:** A schema is owned by **one domain only**. However, its data may be utilized by other domains as needed.
 
-🛠️ Implementation Standards
+Implementation Standards
 ----------------------------
 
 ### 1\. Naming Conventions
@@ -33,7 +33,7 @@ To ensure traceability, tables retain their original source names but include a 
 
 * * * * *
 
-📈 Lifecycle Management
+Lifecycle Management
 -----------------------
 
 ### Schema Evolution
@@ -54,7 +54,7 @@ The architecture is designed to be resilient to changes in the source systems:
 
 * * * * *
 
-### 🤖 AI-Ready Summary
+### AI-Ready Summary
 
 > **Layer Type:** Persistent Staging (Raw/Bronze).
 >

@@ -1,4 +1,4 @@
-🏗️ OneLake for AWS Glue Catalog: Technical Architecture
+OneLake for AWS Glue Catalog: Technical Architecture
 --------------------------------------------------------
 
 OneLake for AWS Glue (formerly ECAS DataHub) is the **Data Mesh** enabler. While the S3 model is about "storage," the Glue model is about **"metadata and sharing"** at the table level.
@@ -33,6 +33,6 @@ The Glue Catalog flavor follows the same governance backbone but with a differen
 
 * * * * *
 
-### 💡 Key Takeaway:
+### Key Takeaway:
 
 > "In the **S3 model**, we move your data to a central OneLake bucket. In the **Glue model**, the data **stays in your project account**, but we use OneLake and RDM to 'index' and 'share' it as a governed **Data Product**. This makes your data F.A.I.R. without losing control over the physical storage."

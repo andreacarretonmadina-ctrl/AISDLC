@@ -1,4 +1,4 @@
- 🌊 OneLake Product
+OneLake Product
 
 Your data management hub in the Roche ecosystem
 ![alt text](../../../img/about-onelake.jpg)
