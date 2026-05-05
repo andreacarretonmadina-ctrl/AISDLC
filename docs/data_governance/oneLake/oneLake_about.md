@@ -1,6 +1,6 @@
 **What is OneLake?**
 
-OneLake on AWS Data Lake is a storage system or repository that collects and stores large amounts of data in its original, raw form.The term "data lake" refers to the image of a natural reservoir into which various information streams flow - similarly, a Data Lake can store data from various sources and in various formats.
+OneLake on AWS Data Lake is a storage system or repository that collects and stores large amounts of data in its original, raw form. The term "data lake" refers to the image of a natural reservoir into which various information streams flow - similarly, a Data Lake can store data from various sources and in various formats.
 
 OneLake provides also Data Governance capabilities tightly coupled with RDM (Roche Data Marketplace). 
 
