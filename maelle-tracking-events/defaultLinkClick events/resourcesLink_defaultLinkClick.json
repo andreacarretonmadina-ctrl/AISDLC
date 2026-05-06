@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/resources#feed",
+"domain":"https://probable-adventure-1qg1yjl.pages.github.io",
+"path":"/resources#feed",
+"innerText": "Stay up to date",
+"position":"hero",
+"name":"ResourcesFeed",
+"type":"link"
+ }
+}

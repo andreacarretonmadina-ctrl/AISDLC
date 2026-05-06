@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://pillar-website-6491de.pages.roche.com/",
+"domain":"https://pillar-website-6491de.pages.roche.com/",
+"path":"",
+"innerText": "Explore technical docs",
+"position":"hero|resourcesFeed",
+"name":"ExternalPage",
+"type":"button"
+ }
+}

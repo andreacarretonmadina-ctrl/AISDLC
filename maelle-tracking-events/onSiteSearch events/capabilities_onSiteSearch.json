@@ -1,0 +1,11 @@
+{
+   "event":"onsiteSearch",
+   "timestamp":12345678,
+   "content":{
+      "onsiteSearch":{
+         "term": "data",
+         "results":"5"
+         },
+         "searchComponent":"capabilities-search-bar"
+      } 
+   }

@@ -1,0 +1,20 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/resources/maelle-is-here:one-roche",
+"domain":"https://probable-adventure-1qg1yjl.pages.github.io",
+"path":"/maelle-is-here:one-roche",
+"innerText": "Maelle is here: One Roche",
+"position":"ResourcesFeed",
+"name":"Resources",
+"type":"icon"
+ },
+ "components":{
+      "embeds": { 
+         "items":[{ 
+         "type":"BusinessResource",
+         "id":"maelle-is-here:one-roche" 
+           }]
+}
+}}

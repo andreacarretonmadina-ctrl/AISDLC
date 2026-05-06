@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/how-it-works",
+"domain":"https://probable-adventure-1qg1yjl.pages.github.io",
+"path":"/how-it-works",
+"innerText": "Learn more about our methodology",
+"position":"howItWorksSection",
+"name":"HowItWorks",
+"type":"link"
+ }
+}

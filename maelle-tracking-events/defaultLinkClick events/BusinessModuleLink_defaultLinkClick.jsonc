@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/capabilities/business",
+"domain":"https://probable-adventure-1qg1jl.pages.github.io",
+"path":"capabilities/business",
+"innerText": "Explore module",
+"position":"capabilitiesSection",
+"name":"ExploreBusiness/module", // if the path of the url contains the information of the section redirected to we can keep linkName as ExploreModule for all the cases 
+"type":"link"
+ }
+}

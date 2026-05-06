@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/#contact",
+"domain":"https://probable-adventure-1qg1yjl.pages.github.io",
+"path":"/#contact",
+"innerText": "Talk to our team",
+"position":"body/onboardingSection", // for having more detailed information on actions inside body is prefer to send the value of each section
+"name":"Contact",
+"type":"link"
+ }
+}

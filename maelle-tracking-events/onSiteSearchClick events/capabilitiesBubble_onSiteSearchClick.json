@@ -1,0 +1,27 @@
+{
+   "event":"onsiteSearchClick",
+   "timestamp":12345678,
+   "components":{
+      "embeds": { 
+         "items":[{ 
+         "type":"business",
+         "id":"Product Manager" 
+           }]
+   },
+   "content":{
+      "onsiteSearch":{
+         "term":"data",
+         "results":"5",
+         "resultPosition":"2"
+         },
+         "searchComponent":"capabilities-search-bar"
+      } 
+   },
+   "link":{
+      "url":"https://probable-adventure-1qg1yjl.pages.github.io/capabilities/business", 
+      "path":"/capabilities/business",
+      "position":"bubble", 
+      "name":"BusinessCapabilities",
+      "type":"link"
+   }
+}

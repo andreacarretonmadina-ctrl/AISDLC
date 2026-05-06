@@ -1,0 +1,13 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://maelle.dev.nax.navify.com/projects",
+"domain":"https://maelle.dev.nax.navify.com",
+"path":"/projects",
+"position":"navBar/header",
+"name":"AccessMaelle",
+"type":"button"
+ }
+}
+
