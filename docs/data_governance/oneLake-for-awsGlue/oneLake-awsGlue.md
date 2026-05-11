@@ -58,6 +58,29 @@ The workflow is divided into two clear responsibilities:
 
 The Glue Catalog flavor follows the same governance backbone but with a different focus:
 
+```mermaid
+flowchart LR
+    subgraph Producer Side
+        A[🏗️ Data Producer] -->|registers assets| B[EDMA]
+        B -->|assembles into| C[Data Products]
+    end
+
+    subgraph OneLake Platform
+        C -->|registered in| D[OneLake for Glue]
+        D -->|indexes & shares| E[RDM Portal]
+    end
+
+    subgraph Consumer Side
+        E -->|discovers & requests| F[🛒 Data Consumer]
+        F -->|auto-provisioned access| G[Consumer AWS Account]
+    end
+
+    style A fill:#4CAF50,color:#fff
+    style F fill:#2196F3,color:#fff
+    style D fill:#FF9800,color:#fff
+    style E fill:#9C27B0,color:#fff
+```
+
 - **[EDMA](../../../GLOSSARY.md)** — Used by Producers to register and assemble Data Assets into Datasets and Data Products.
 - **[RDM](rdm-nomenclature.md) Portal** — The central hub where Consumers search and *shop* for these Data Products.
 - **OneLake for Glue** — Handles the technical *registration, searching, and sharing* of the Glue-specific assets.
