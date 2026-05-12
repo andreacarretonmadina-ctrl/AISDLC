@@ -7,12 +7,5 @@
 "path":"/maelle-is-here:one-roche",
 "innerText": "Maelle is here: One Roche",
 "type":"icon"
- },
- "components":{
-      "embeds": { 
-         "items":[{ 
-         "type":"business",
-         "id":"maelle-is-here:one-roche" 
-           }]
+ }
 }
-}}

@@ -4,7 +4,7 @@
    "content":{
       "onsiteSearch":{
          "term": "data",
-         "results":"5"
+         "results":"5" // number of results returned for the search query, if available
          },
          "searchComponent":"capabilities-search-bar"
       } 

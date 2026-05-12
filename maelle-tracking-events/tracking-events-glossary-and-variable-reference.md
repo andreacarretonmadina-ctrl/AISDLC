@@ -75,7 +75,7 @@ Fires when a user clicks a tracked link or button. All fields live under the `li
 | `link.name` | `string` | ❌ Static per element | Logical name for the action. Set via `data-tracking` attribute. | `"AccessMaelle"`, `"ContactSubmit"` |
 | `link.type` | `string` | ❌ Static per element | Element type: `"link"`, `"button"`, or `"icon"` | `"button"` |
 
-### Position Values Reference
+### Position Values Reference (not used at the moment as it would require manual config. Website contains one unique link/click for each content by page so we can differentiate where it happened. For Access Maelle button we could implement a data-tracking-position attribute)
 
 | `link.position` | Where on page | Used by |
 |-----------------|---------------|---------|
@@ -89,7 +89,7 @@ Fires when a user clicks a tracked link or button. All fields live under the `li
 | `ResourcesFeed` | Resources feed/list | readMoreLink, resourcesIcon |
 | `hero\|resourcesFeed` | Hero or resources feed (context-dependent) | PillarExternalLink |
 
-### Link Name Values Reference
+### Link Name Values Reference (ignoring for the moment as it requires manual config, instead we will capture element innerText)
 
 | `link.name` | Action |
 |-------------|--------|
@@ -118,7 +118,8 @@ Used when a click is associated with a specific content item (e.g., a resource a
 
 ## 5. `onsiteSearch` — Attribute Reference
 
-Fires when a user submits a search query. Fields live under `content`.
+Fires when a user submits a search query. 
+On search results page or search/filter update. Fields live under `content`.
 
 | Field | Type | Dynamic? | Resolution Logic | Example |
 |-------|------|----------|-----------------|---------|
@@ -150,9 +151,8 @@ To enable automatic event binding, add these `data-*` attributes to tracked elem
 
 ```html
 <a
-  data-tracking="AccessMaelle"
-  data-tracking-position="navBar/header"
-  data-tracking-type="button"
+  data-tracking-position="navBar/header/hero"
+  data-tracking-type="button/link/icon"
   href="/projects"
 >
   Access Maelle
@@ -161,9 +161,9 @@ To enable automatic event binding, add these `data-*` attributes to tracked elem
 
 | Attribute | Maps to | Required |
 |-----------|---------|----------|
-| `data-tracking` | `link.name` | ✅ Yes |
+| `data-tracking` | `link.name` |  No |
 | `data-tracking-position` | `link.position` | ✅ Yes |
-| `data-tracking-type` | `link.type` | ✅ Yes (default: `"link"`) |
+| `data-tracking-type` | `link.type` | ✅ Yes  |
 
 Dynamic fields (`link.url`, `link.path`, `link.domain`, `link.innerText`) are resolved automatically from the element at click time.
 
@@ -178,9 +178,7 @@ Dynamic fields (`link.url`, `link.path`, `link.domain`, `link.innerText`) are re
 | `page.domain` | `window.location.origin` |
 | `page.path` | `window.location.pathname` |
 | `page.pageTitle` | `document.title` |
-| `page.referrer` | `document.referrer` |
-| `page.pageName` | Computed: `${siteName}:${market}:${language}:${mainCategory}` |
-| `page.market` / `page.language` | Locale config or URL segment |
+| `page.language` | Locale config or URL segment |
 | `link.url` | `element.href` |
 | `link.domain` | `new URL(element.href).origin` |
 | `link.path` | `new URL(element.href).pathname` |

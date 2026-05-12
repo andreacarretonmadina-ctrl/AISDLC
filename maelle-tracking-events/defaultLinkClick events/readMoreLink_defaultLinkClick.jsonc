@@ -7,12 +7,5 @@
 "path":"/resources/maelle-is-here:one-roche",
 "innerText": "Read More",
 "type":"link"
- },
- "components":{
-      "embeds": { 
-         "items":[{ 
-         "type":"business",
-         "id":"maelle-is-here:one-roche" 
-           }]
+ }
 }
-}}
