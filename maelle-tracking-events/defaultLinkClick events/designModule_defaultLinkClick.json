@@ -1,0 +1,11 @@
+{
+"event":"defaultLinkClick",
+"timestamp":1234,
+"link":{
+"url":"https://probable-adventure-1qg1yjl.pages.github.io/capabilities/design",
+"domain":"https://probable-adventure-1qg1jl.pages.github.io",
+"path":"capabilities/design",
+"innerText": "design",
+"type":"icon"
+ }
+}

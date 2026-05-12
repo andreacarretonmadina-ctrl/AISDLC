@@ -2,16 +2,13 @@
    "event": "defaultPageView",
    "timestamp": 1639172876, // Required
    "page": {
-      "siteName": "Maelle", //Change
+      "siteName": "Maelle", //Required
       "sysEnv": "Prod", // Required
-      "market": "es", // Required
       "language": "es", // Required
       "url": "https://probable-adventure-1qg1yjl.pages.github.io/capabilities", // Required
       "domain": "https://probable-adventure-1qg1yjl.pages.github.io", // Required
       "path": "/capabilities", // Required
       "pageTitle": "Capabilities", // Required
-      "pageName": "Maelle:es:es:CapabilitiesPage", // Required
-      "referrer": "", // Required
       "mainCategory": "CapabilitiesPage" // Required
        }
     }

@@ -4,14 +4,11 @@
    "page": {
       "siteName": "Maelle", //Change
       "sysEnv": "Prod", // Required
-      "market": "es", // Required
       "language": "es", // Required
       "url": "https://probable-adventure-1qg1yjl.pages.github.io/how-it-works", // Required
       "domain": "https://probable-adventure-1qg1yjl.pages.github.io", // Required
       "path": "/how-it-works", // Required
       "pageTitle": "How it Works", // Required
-      "pageName": "Maelle:es:es:AboutPage", // Required
-      "referrer": "", // Required
       "mainCategory": "AboutPage" // Required
        }
     }

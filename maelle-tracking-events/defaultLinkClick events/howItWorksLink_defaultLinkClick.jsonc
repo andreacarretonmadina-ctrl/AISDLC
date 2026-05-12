@@ -6,8 +6,7 @@
 "domain":"https://probable-adventure-1qg1yjl.pages.github.io",
 "path":"/how-it-works",
 "innerText": "Learn more about our methodology",
-"position":"howItWorksSection",
-"name":"HowItWorks",
+"position":"howItWorksSection", // Not necessary but can be useful for tracking if there are multiple links to the same URL on the page
 "type":"link"
  }
 }

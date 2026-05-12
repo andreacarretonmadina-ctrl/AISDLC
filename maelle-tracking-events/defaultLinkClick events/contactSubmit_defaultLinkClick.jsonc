@@ -7,7 +7,6 @@
 "innerText": "Send Message",
 "path":"/#contact",
 "position":"bottomForm",
-"name":"ContactSubmit",
 "type":"link"
  }
 }

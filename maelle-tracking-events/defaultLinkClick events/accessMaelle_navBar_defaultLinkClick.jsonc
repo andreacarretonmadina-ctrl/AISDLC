@@ -5,8 +5,8 @@
 "url":"https://maelle.dev.nax.navify.com/projects",
 "domain":"https://maelle.dev.nax.navify.com",
 "path":"/projects",
+"innerText":"Access Maelle",
 "position":"navBar/header",
-"name":"AccessMaelle",
 "type":"button"
  }
 }

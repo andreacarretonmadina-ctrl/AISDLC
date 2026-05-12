@@ -86,3 +86,16 @@ To enable the **oneDataLayer (ODL)** on your website, you must include the **Ado
 - [EDDL Overview – What is oneDataLayer?](eddl-overview.md)
 - [Tracking Event Catalog](../maelle-tracking-events/README.md)
 - [Glossary of Terms](../GLOSSARY.md)
+
+## Content Security Policy (CSP)
+
+To ensure that Adobe Analytics works on your website, please include these directives in your Content Security Policy (CSP):
+
+```
+connect-src 'self' https://assets.adobedtm.com https://*.2o7.net https://*.omtrdc.net https://*.demdex.net https://cm.everesttech.net https://*.adobe.com;
+img-src 'self' https://assets.adobedtm.com https://*.2o7.net https://*.omtrdc.net https://*.demdex.net https://cm.everesttech.net https://*.adobe.com;
+script-src 'self' 'unsafe-inline' https://assets.adobedtm.com https://*.2o7.net https://*.omtrdc.net https://*.demdex.net https://cm.everesttech.net https://*.adobe.com;
+frame-src 'self' https://*.demdex.net;
+```
+
+> ⚠️ **Without these CSP directives**, Adobe Launch and its associated services will be blocked by the browser, and tracking data will not be collected.

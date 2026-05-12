@@ -6,14 +6,12 @@
 "domain":"https://probable-adventure-1qg1yjl.pages.github.io",
 "path":"/maelle-is-here:one-roche",
 "innerText": "Maelle is here: One Roche",
-"position":"ResourcesFeed",
-"name":"Resources",
 "type":"icon"
  },
  "components":{
       "embeds": { 
          "items":[{ 
-         "type":"BusinessResource",
+         "type":"business",
          "id":"maelle-is-here:one-roche" 
            }]
 }

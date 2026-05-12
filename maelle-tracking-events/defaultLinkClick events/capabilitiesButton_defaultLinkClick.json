@@ -7,7 +7,6 @@
 "path":"/capabilities",
 "innerText": "Deep dive by role",
 "position":"onboardingSection",
-"name":"ExploreCapabilities",
 "type":"button"
  }
 }
