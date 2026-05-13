@@ -73,7 +73,7 @@ Fires when a user clicks a tracked link or button. All fields live under the `li
 | `link.innerText` | `string` | ✅ Dynamic | `element.innerText.trim()` — visible label of the clicked element. The DOM Element innerText of the link clicked.| `"Learn more"` |
 | `link.position` | `string` | ❌ Static per element | Identifies where on the page the element lives. The DOM Element position of the link clicked. Set via `data-tracking-position` attribute or hardcoded per component. | `"hero"`, `"navBar/header"`, `"body/onboardingSection"` |
 | `link.name` | `string` | ❌ Static per element | Logical name for the action. Set via `data-tracking` attribute. | `"AccessMaelle"`, `"ContactSubmit"` |
-| `link.type` | `string` | ❌ Static per element | Element type: `"link"`, `"button"`, or `"icon"` | `"button"` |
+| `link.type` | `string` | ❌ Static per element Set via `data-tracking-type` attribute | Element type: `"link"`, `"button"`, or `"icon"` | `"button"` |
 
 ### Position Values Reference (not used at the moment as it would require manual config. Website contains one unique link/click for each content by page so we can differentiate where it happened. For Access Maelle button we could implement a data-tracking-position attribute)
 
@@ -149,11 +149,55 @@ Fires when a user clicks a search result. Combines `content`, `components`, and 
 
 To enable automatic event binding, add these `data-*` attributes to tracked elements:
 
+### `data-tracking-position` Values
+
+Identifies the section of the page where the element is located.
+
+| Value | Description | Example Location |
+|-------|-------------|-----------------|
+| `hero` | Main hero/banner section at the top of a page | CTA buttons in the landing banner e.g. Access Maelle, Talk to our team |
+| `navBar` | Top navigation bar / site header | Navigation links, access buttons in the header e.g. Access Maelle |
+
+### `data-tracking-type` Values
+
+Identifies the type of interactive element being clicked.
+
+| Value | Description | Example Element |
+|-------|-------------|-----------------|
+| `link` | A standard hyperlink (`<a>`) that navigates to another page or section | `<a href="/capabilities">Explore all capabilities</a>` |
+| `button` | A call-to-action button (`<button>` or styled `<a>`) that triggers a primary action | `<button>Access Maelle</button>` |
+| `icon` | A clickable icon or icon-based element with minimal or no visible text | Business Explore module |
+
+### Examples
+
+**Link in the hero section:**
 ```html
 <a
-  data-tracking-position="navBar/header/hero"
-  data-tracking-type="button/link/icon"
-  href="/projects"
+  data-tracking-position="hero"
+  data-tracking-type="link"
+  href="/#contact"
+>
+  Talk to our team
+</a>
+```
+
+**Button in the navigation bar:**
+```html
+<a
+  data-tracking-position="navBar"
+  data-tracking-type="button"
+  href="https://maelle.roche.com"
+>
+  Access Maelle
+</a>
+```
+
+**Button in the hero section:**
+```html
+<a
+  data-tracking-position="hero"
+  data-tracking-type="button"
+  href="https://maelle.roche.com"
 >
   Access Maelle
 </a>
@@ -166,6 +210,7 @@ To enable automatic event binding, add these `data-*` attributes to tracked elem
 | `data-tracking-type` | `link.type` | ✅ Yes  |
 
 Dynamic fields (`link.url`, `link.path`, `link.domain`, `link.innerText`) are resolved automatically from the element at click time.
+// ...existing code...
 
 ---
 
