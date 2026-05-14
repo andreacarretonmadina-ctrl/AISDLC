@@ -75,7 +75,7 @@ Fires when a user clicks a tracked link or button. All fields live under the `li
 | `link.name` | `string` | ❌ Static per element | Logical name for the action. Set via `data-tracking` attribute. | `"AccessMaelle"`, `"ContactSubmit"` |
 | `link.type` | `string` | ❌ Static per element Set via `data-tracking-type` attribute | Element type: `"link"`, `"button"`, or `"icon"` | `"button"` |
 
-### Position Values Reference (not used at the moment as it would require manual config. Website contains one unique link/click for each content by page so we can differentiate where it happened. For Access Maelle button we could implement a data-tracking-position attribute)
+### Position Values Reference ⚠️ Not currently implemented. Each page has unique links per section, so position is inferred from context. For elements like "Access Maelle" (which appears in multiple locations), a `data-tracking-position` attribute should be added to disambiguate.
 
 | `link.position` | Where on page | Used by |
 |-----------------|---------------|---------|
@@ -89,7 +89,7 @@ Fires when a user clicks a tracked link or button. All fields live under the `li
 | `ResourcesFeed` | Resources feed/list | readMoreLink, resourcesIcon |
 | `hero\|resourcesFeed` | Hero or resources feed (context-dependent) | PillarExternalLink |
 
-### Link Name Values Reference (ignoring for the moment as it requires manual config, instead we will capture element innerText)
+### Link Name Values Reference > ⚠️ Not currently implemented. We rely on \ `link.innerText` for now, as `link.name` requires adding `data-tracking` attributes manually.`
 
 | `link.name` | Action |
 |-------------|--------|

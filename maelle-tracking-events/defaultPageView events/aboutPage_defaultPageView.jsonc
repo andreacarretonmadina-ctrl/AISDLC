@@ -1,14 +1,14 @@
 {
    "event": "defaultPageView",
-   "timestamp": 1639172876, // Required
+   "timestamp": 1639172876, 
    "page": {
-      "siteName": "Maelle", //Required
-      "sysEnv": "Prod", // Required
-      "language": "es", // Required
-      "url": "https://probable-adventure-1qg1yjl.pages.github.io/how-it-works", // Required
-      "domain": "https://probable-adventure-1qg1yjl.pages.github.io", // Required
-      "path": "/how-it-works", // Required
-      "pageTitle": "How it Works", // Required
-      "mainCategory": "AboutPage" // Required
-       }
+      "siteName": "Maelle", 
+      "sysEnv": "Prod", 
+      "language": "es", 
+      "url": "https://probable-adventure-1qg1yjl.pages.github.io/how-it-works", 
+      "domain": "https://probable-adventure-1qg1yjl.pages.github.io",
+      "path": "/how-it-works", 
+      "pageTitle": "How it Works", 
+      "mainCategory": "AboutPage"
+      }
     }
