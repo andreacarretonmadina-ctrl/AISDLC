@@ -1,0 +1,13 @@
+{
+   "event":"courseStart",
+   "eventDetails":"",
+   "timestamp":1639172876,
+   "content":{
+     "course":{
+         "id":"",
+         "name":"",
+         "module":"",
+         "category":""
+      }
+   }
+}

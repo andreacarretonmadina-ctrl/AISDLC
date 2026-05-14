@@ -1,0 +1,14 @@
+{
+   "event":"audioError",
+   "eventDetails":"",
+   "timestamp":1639172876,
+   "content":{
+      "audio":{
+         "name":"",
+         "url":"",
+         "provider":"",
+         "durationTotal":60,
+         "error":""
+      }
+   }
+}

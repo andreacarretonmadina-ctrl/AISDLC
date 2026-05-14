@@ -1,0 +1,16 @@
+{
+   "event":"userAutoLogin",
+   "eventDetails":"",
+   "timestamp":1234567890,
+   "user":{
+      "isLoggedIn":true,
+      "sapcdcUID":"",
+      "uci":"",
+      "mdm":"",
+      "sId":"",
+      "profession":"",
+      "position":"",
+      "specialty":"",
+      "center":""
+   }
+}

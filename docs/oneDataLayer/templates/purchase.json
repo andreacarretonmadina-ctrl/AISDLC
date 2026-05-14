@@ -1,0 +1,25 @@
+{
+   "event":"purchase",
+   "eventDetails":"",
+   "timestamp":1234567890,
+   "ecommerce":{
+      "transaction_id":"",
+      "currency":"",
+      "tax":0,
+      "shipping":0,
+      "coupon":"",
+      "payment_type":"",
+      "items":[{
+         "item_id":"",
+         "item_name":"",
+         "coupon":"",
+         "currency":"",
+         "discount":0,
+         "item_brand":"",
+         "item_category":"",
+         "item_variant":"",
+         "price":0,
+         "quantity":0
+      }]
+   }
+}

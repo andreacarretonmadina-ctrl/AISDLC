@@ -1,7 +1,7 @@
 {
     "event": "scroll",
     "eventDetails": "",
-    "timestamp": null,
+    "timestamp": 1234567890,
     "page": {
         "scrolled": 75,
         "siteName": "",

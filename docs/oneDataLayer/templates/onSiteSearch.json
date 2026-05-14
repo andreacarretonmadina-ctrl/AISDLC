@@ -1,11 +1,11 @@
 {
     "event": "onsiteSearch",
     "eventDetails": "",
-    "timestamp": null,
+    "timestamp": 1234567890,
     "content": {
         "onsiteSearch": {
             "term": "",
-            "results": null,
+            "results": 4,
             "filter": {
                 "filter1-name": ["", ""],
                 "filter2-name": ["", ""]

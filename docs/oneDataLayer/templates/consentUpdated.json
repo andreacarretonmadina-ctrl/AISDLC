@@ -1,6 +1,6 @@
  {
    "event":"consentUpdated",
-   "timestamp":1234567,
+   "timestamp":1234567890,
    "user":{
       "consent":{
          "C0001":true,

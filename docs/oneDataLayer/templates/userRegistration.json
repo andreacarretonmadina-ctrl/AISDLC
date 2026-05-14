@@ -1,0 +1,42 @@
+{
+   "event":"userRegistration",
+   "eventDetails":"",
+   "timestamp":1639172876,
+   "user":{
+      "sapcdcUID":"",
+      "uci":"",
+      "mdm":"",
+      "sId":"",
+      "socialProviderSso":"",
+      "profession":"",
+      "position":"",
+      "specialty":"",
+      "center":""
+   },
+   "content":{
+      "form":{
+         "name":"",
+         "type":"",
+         "step":1,
+         "stepsTotal":3,
+         "previousStepFields":{
+            "mandatory":[],
+            "optional":[{
+               "label":"",
+               "input":""
+            }]
+         },
+         "communicationsConsent":{
+            "channels":[{
+               "label":"",
+               "optin": true
+            }],
+            "topics":[{
+               "label":"",
+               "id":"",
+               "optin": true
+            }]
+         }
+      }
+   }
+}

@@ -1,13 +1,13 @@
 {
     "event": "formError",
     "eventDetails": "",
-    "timestamp": null,
+    "timestamp": 1234567890,
     "content": {
         "form": {
             "name": "",
             "type": "",
-            "step": null,
-            "stepsTotal": null,
+            "step": 1,
+            "stepsTotal": 2,
             "error": ""
         }
     }

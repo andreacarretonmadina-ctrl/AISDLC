@@ -1,12 +1,12 @@
 {
     "event": "onsiteSearchClick",
     "eventDetails": "",
-    "timestamp": null,
+    "timestamp": 1234567890,
     "content": {
         "onsiteSearch": {
             "term": "",
-            "results": null,
-            "resultPosition": null,
+            "results": 4,
+            "resultPosition": 1,
             "filter": {
                 "filter1-name": ["", ""],
                 "filter2-name": ["", ""]

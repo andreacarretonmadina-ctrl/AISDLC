@@ -1,7 +1,7 @@
 {
     "event": "defaultPageView",
     "eventDetails": "",
-    "timestamp": null,
+    "timestamp": 1234567890,
     "page": {
         "siteName": "",
         "sysEnv": "",

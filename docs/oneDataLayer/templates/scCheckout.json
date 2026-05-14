@@ -1,0 +1,19 @@
+{
+   "event":"scCheckout",
+   "eventDetails":"",
+   "timestamp":1234567890,
+   "ecommerce":{
+      "currency":"",
+      "items":[{
+         "item_id":"",
+         "item_name":"",
+         "currency":"",
+         "discount":0,
+         "item_brand":"",
+         "item_category":"",
+         "item_variant":"",
+         "price":0,
+         "quantity":0
+      }]
+   }
+}

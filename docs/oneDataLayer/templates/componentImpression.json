@@ -1,7 +1,7 @@
 {
   "event": "componentImpression",
   "eventDetails": "",
-  "timestamp": null,
+  "timestamp": 1234567890,
   "components": {
     "banner": {
       "items": [

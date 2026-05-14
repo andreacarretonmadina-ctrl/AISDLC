@@ -1,0 +1,17 @@
+{
+   "event":"userLogin",
+   "eventDetails":"",
+   "timestamp":1234567890,
+   "user":{
+      "isLoggedIn":true,
+      "sapcdcUID":"",
+      "uci":"",
+      "mdm":"",
+      "sId":"",
+      "socialProviderSso":"",
+      "profession":"",
+      "position":"",
+      "specialty":"",
+      "center":""
+   }
+}

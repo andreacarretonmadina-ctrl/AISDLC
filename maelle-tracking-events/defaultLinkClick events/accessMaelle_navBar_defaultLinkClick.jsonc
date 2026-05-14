@@ -1,6 +1,6 @@
 {
 "event":"defaultLinkClick",
-"timestamp":1234,
+"timestamp":1234567890,
 "link":{
 "url":"https://maelle.dev.nax.navify.com/projects",
 "domain":"https://maelle.dev.nax.navify.com",

@@ -1,0 +1,18 @@
+{
+   "event":"userRegistrationError",
+   "eventDetails":"",
+   "errorType":"User Registration Error",
+   "timestamp":1234567890,
+   "user":{
+      "socialProviderSso":""
+   },
+   "content":{
+      "form":{
+         "name":"",
+         "type":"",
+         "step":1,
+         "stepsTotal":3,
+         "error":""
+         }
+      }
+   }

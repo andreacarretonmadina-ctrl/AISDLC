@@ -1,0 +1,16 @@
+{
+   "event":"userLoginError",
+   "eventDetails":"",
+   "errorType":"User Login Error",
+   "timestamp":1234567890,
+   "user":{
+      "socialProviderSso":""
+   },
+   "content":{
+      "form":{
+         "name":"",
+         "type":"",
+         "error":""
+      }
+   }
+}
