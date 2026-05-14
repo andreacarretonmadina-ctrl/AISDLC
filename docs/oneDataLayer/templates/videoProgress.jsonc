@@ -1,0 +1,14 @@
+{
+   "event":"videoProgress",
+   "eventDetails":"",
+   "timestamp":1234567,
+   "content":{
+      "video":{
+         "name":"",
+         "url":"",
+         "provider":"",
+         "durationTotal": 60,
+        "progress": [10, 25, 50, 75]  // Send an event for each % of video completion 
+     }
+   }
+}

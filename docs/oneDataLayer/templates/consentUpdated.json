@@ -1,0 +1,13 @@
+ {
+   "event":"consentUpdated",
+   "timestamp":1234567,
+   "user":{
+      "consent":{
+         "C0001":true,
+         "C0002":true,
+         "C0003":false,
+         "C0004":false,
+         "C0005":false
+      }
+   }
+}

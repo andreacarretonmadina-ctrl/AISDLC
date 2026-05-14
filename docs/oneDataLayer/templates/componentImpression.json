@@ -1,0 +1,34 @@
+{
+  "event": "componentImpression",
+  "eventDetails": "",
+  "timestamp": null,
+  "components": {
+    "banner": {
+      "items": [
+        {
+          "id": "",
+          "name": "",
+          "position": ""
+        }
+      ]
+    },
+    "popup": {
+      "items": [
+        {
+          "id": "",
+          "name": "",
+          "position": ""
+        }
+      ]
+    },
+    "sidesheet": {
+      "items": [
+        {
+          "id": "",
+          "name": "",
+          "position": ""
+        }
+      ]
+    }
+  }
+}

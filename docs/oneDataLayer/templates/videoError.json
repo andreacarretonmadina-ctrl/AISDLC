@@ -1,0 +1,14 @@
+{
+   "event":"videoError",
+   "eventDetails":"",
+   "timestamp":1234567,
+   "content":{
+      "video":{
+         "name":"",
+         "url":"",
+         "provider":"",
+         "durationTotal":60,
+         "error":""
+      }
+   }
+}

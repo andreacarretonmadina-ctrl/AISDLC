@@ -1,0 +1,110 @@
+{
+    "event": "defaultPageView",
+    "eventDetails": "",
+    "timestamp": null,
+    "page": {
+        "siteName": "",
+        "sysEnv": "",
+        "market": "",
+        "language": "",
+        "url": "",
+        "domain": "",
+        "path": "",
+        "pageTitle": "",
+        "pageName": "",
+        "pageType": "",
+        "uuid": "",
+        "protected": "",
+        "referrer": "",
+        "mainCategory": "",
+        "categoryTree": "",
+        "previousPage": {
+            "url": "",
+            "path": "",
+            "pageTitle": "",
+            "pageName": "",
+            "mainCategory": "",
+            "categoryTree": ""
+        },
+        "media": [
+            {
+                "type": "",
+                "name": ""
+            }
+        ]
+    },
+    "content": {
+        "contentTitle": "",
+        "vvpm": [],
+        "indication": [
+            {
+                "id": "",
+                "name": ""
+            }
+        ],
+        "therapeuticArea": [
+            {
+                "id": "",
+                "name": ""
+            }
+        ],
+        "product": [
+            {
+                "id": "",
+                "name": ""
+            }
+        ],
+        "contentTags": [
+            {
+                "id": "",
+                "name": ""
+            }
+        ],
+        "contentHashtags": [],
+        "contentDuration": null,
+        "course": {
+            "id": "",
+            "name": "",
+            "module": "",
+            "category": ""
+        }
+    },
+    "user": {
+        "consent": {
+            "C0001": true,
+            "C0002": false,
+            "C0003": false,
+            "C0004": false
+        },
+        "isLoggedIn": null,
+        "account": {
+            "intIp": null,
+            "intEm": null,
+            "mailDomain": ""
+        },
+        "mdm": "",
+        "oneKey": "",
+        "sId": "",
+        "uci": "",
+        "profession": "",
+        "position": "",
+        "specialty": "",
+        "center": "",
+        "tenantId": "",
+        "identifiers": [
+            {
+                "type": "",
+                "value": ""
+            }
+        ]
+    },
+    "components": {
+        "bookmark": {
+            "items": [{}],
+            "bookmarked": true
+        },
+        "contentSummary": {
+            "items": [{}]
+        }
+    }
+}

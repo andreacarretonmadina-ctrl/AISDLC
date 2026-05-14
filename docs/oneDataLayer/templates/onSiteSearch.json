@@ -1,0 +1,16 @@
+{
+    "event": "onsiteSearch",
+    "eventDetails": "",
+    "timestamp": null,
+    "content": {
+        "onsiteSearch": {
+            "term": "",
+            "results": null,
+            "filter": {
+                "filter1-name": ["", ""],
+                "filter2-name": ["", ""]
+            },
+            "searchComponent": ""
+        }
+    }
+}

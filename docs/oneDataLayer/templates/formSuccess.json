@@ -1,0 +1,13 @@
+{
+   "event":"formSuccess",
+   "eventDetails":"",
+   "timestamp":1234567,
+   "content":{
+      "form":{
+         "name":"",
+         "type":"",
+         "step":2,
+         "stepsTotal": 2
+      }
+   }
+}

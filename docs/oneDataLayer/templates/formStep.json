@@ -1,0 +1,22 @@
+{
+   "event": "formStep",
+   "eventDetails": "",
+   "timestamp": null,
+   "content": {
+      "form": {
+         "name": "",
+         "type": "",
+         "step": null,
+         "stepsTotal": null,
+         "previousStepFields": {
+            "mandatory": [],
+            "optional": [
+               {
+                  "label": "",
+                  "input": true
+               }
+            ]
+         }
+      }
+   }
+}

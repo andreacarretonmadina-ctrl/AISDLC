@@ -1,0 +1,28 @@
+{
+   "event":"defaultLinkClick",
+   "eventDetails":"",
+   "timestamp":1234567,
+   "link":{
+      "url":"",
+      "domain":"",
+      "path":"",
+      "innerText":"",
+      "position":"",
+      "name":"",
+      "type":"",
+      "socialMedia":"",
+      "socialInteraction":""
+   },
+   "components":{
+      "bookmark":{
+         "items":[{}]
+      }
+   },
+   "product":{
+      "productId":"",
+      "productName":"",
+      "productCategory":""
+   }
+}
+ 
+ 

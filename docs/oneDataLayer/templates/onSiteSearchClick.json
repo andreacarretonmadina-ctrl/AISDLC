@@ -1,0 +1,26 @@
+{
+    "event": "onsiteSearchClick",
+    "eventDetails": "",
+    "timestamp": null,
+    "content": {
+        "onsiteSearch": {
+            "term": "",
+            "results": null,
+            "resultPosition": null,
+            "filter": {
+                "filter1-name": ["", ""],
+                "filter2-name": ["", ""]
+            },
+            "searchComponent": ""
+        }
+    },
+    "link": {
+        "url": "",
+        "domain": "",
+        "path": "",
+        "innerText": "",
+        "position": "",
+        "name": "",
+        "type": "Search result"
+    }
+}

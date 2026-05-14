@@ -1,0 +1,13 @@
+{
+    "event": "formStart",
+    "eventDetails": "",
+    "timestamp": null,
+    "content": {
+        "form": {
+            "name": "",
+            "type": "",
+            "step": null,
+            "stepsTotal": null
+        }
+    }
+}

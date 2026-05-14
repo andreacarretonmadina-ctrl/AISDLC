@@ -1,0 +1,20 @@
+{
+  "event": "tabCLick",
+  "eventDetails": "",
+  "timestamp": "",
+  "link": {
+    "url": "",
+    "domain": "",
+    "path": "",
+    "innerText": "",
+    "position": "",
+    "name": "",
+    "type": ""
+  },
+  "components": {
+    "tabs": {
+      "items": [{}],
+      "tabsComponent": ""
+    }
+  }
+}

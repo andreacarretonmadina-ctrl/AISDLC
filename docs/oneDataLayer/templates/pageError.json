@@ -1,0 +1,26 @@
+{
+   "event":"pageError",
+   "eventDetails":"",
+   "timestamp":1234567,
+   "page":{
+      "error":"",
+      "errorType":"",
+      "siteName":"",
+      "market":"",
+      "language":"en",
+      "url":"",
+      "domain":"",
+      "path":"",
+      "pageTitle":"",
+      "pageName":"",
+      "referrer":"",
+      "previousPage":{
+         "url":"",
+         "path":"",
+         "pageTitle":"",
+         "pageName":"",
+         "mainCategory":"",
+         "categoryTree":""
+       }
+    }
+}

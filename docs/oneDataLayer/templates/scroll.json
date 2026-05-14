@@ -1,0 +1,30 @@
+{
+    "event": "scroll",
+    "eventDetails": "",
+    "timestamp": null,
+    "page": {
+        "scrolled": 75,
+        "siteName": "",
+        "sysEnv": "",
+        "market": "",
+        "language": "",
+        "url": "",
+        "domain": "",
+        "path": "",
+        "pageTitle": "",
+        "pageName": "",
+        "uuid": "",
+        "protected": "",
+        "referrer": "",
+        "mainCategory": "",
+        "categoryTree": "",
+        "previousPage": {
+            "url": "",
+            "path": "",
+            "pageTitle": "",
+            "pageName": "",
+            "mainCategory": "",
+            "categoryTree": ""
+        }
+    }
+}
