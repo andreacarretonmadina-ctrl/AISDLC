@@ -1,3 +1,61 @@
+## How to implement `defaultPageView`on Maelle
+
+## 1. Prerequisites — Adobe Launch Script in `<head>`
+
+Every page must load the Adobe Launch script **before** any `oneDataLayer.push()` calls, and the array must be initialized right after it:
+
+```html
+<head>
+    <!-- Adobe Launch (Production) -->
+    <script src='https://assets.adobedtm.com/9215900255c9/17f1b4dd3439/launch-bb453ba32d52.min.js' async></script>
+
+    <!-- Initialize oneDataLayer -->
+    <script>
+        window.oneDataLayer = window.oneDataLayer || [];
+    </script>
+</head>
+```
+
+> For staging/QA use `launch-3cdcd1196ea2-staging.min.js` instead. Never load both scripts on the same page.
+
+---
+
+## 2. The `defaultPageView` Push — Full Pattern
+
+Fire this on **initial page load AND on every SPA route change**:
+
+```javascript
+window.oneDataLayer = window.oneDataLayer || [];
+window.oneDataLayer.push({
+  "event": "defaultPageView",
+  "timestamp": Math.floor(Date.now() / 1000),   // ✅ always dynamic
+  "page": {
+    "siteName": "Maelle",                         // ❌ static — always "Maelle"
+    "sysEnv": "Prod",                             // ⚠️ set from build config: "Prod" | "Staging" | "Dev"
+    "language": "es",                             // ✅ from <html lang> or locale config (ISO 639-1)
+    "url": window.location.href,                  // ✅ dynamic
+    "domain": window.location.origin,             // ✅ dynamic
+    "path": window.location.pathname,             // ✅ dynamic ("" for root /)
+    "pageTitle": document.title,                  // ✅ dynamic — or use the map below
+    "mainCategory": "<see page map below>"        // ⚠️ per-page static value
+  }
+});
+```
+---
+
+## 3. Per-Page Static Values (Route → Category Map)
+
+| Route | `mainCategory` | `pageTitle` |
+|-------|---------------|-------------|
+| `/` | `HomePage` | `Maelle - Your Corporate Brain` |
+| `/how-it-works` | `AboutPage` | `How it Works` |
+| `/capabilities` | `CapabilitiesPage` | `Capabilities` |
+| `/resources` | `ResourcesPage` | `Resources` |
+
+---
+
+
+
 ## Event Mapping Per Page
 
 ### About Page (`/how-it-works`)
