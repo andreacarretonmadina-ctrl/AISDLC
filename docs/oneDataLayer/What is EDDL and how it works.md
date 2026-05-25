@@ -36,3 +36,15 @@ window.oneDataLayer.push({
 > **Important:**
 > - `oneDataLayer` can be set without considering the consent state (opt-in/opt-out) since it is a local object on the user's device. Data is not leaving the user's device.
 > - Always use the first line `window.oneDataLayer = window.oneDataLayer || [];` before pushing events to not break event tracking.
+
+The folder `templates/` specifies all possible key-value pairs. **Avoid languages other than English for the values set, except for market-specific values or specific content names.**
+The folder `templates/` contains all Events alongside code examples (key-value pairs to be included if applicable) to be pushed.
+
+All changes are tracked in EDDL Changelog in our GitLab Repo	
+https://code.roche.com/gps/onedatalayer/-/blob/main/oneDataLayer-changelog.md	
+	
+Instructions for developping EDDL oneDataLayer object:	
+https://docs.google.com/document/d/1nes69O-n85l0ve04urbIL0WqqtQ6MXJZoavUoFh_EXc/edit#heading=h.vbuwf7ch6uaz	
+
+Instructions for debugging the EDDL implementation:	
+https://docs.google.com/document/d/1iXraSkKPao7IxUtsSvgogYRlCKfr2y6QoVhq6rgUlIY/	
