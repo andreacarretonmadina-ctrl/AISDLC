@@ -50,7 +50,7 @@ window.oneDataLayer.push({
 | `/` | `HomePage` | `Maelle \| Home` |
 | `/how-it-works` | `AboutPage` | `Maelle \| How it Works` |
 | `/capabilities` | `CapabilitiesPage` | `Maelle \| Capabilities` |
-| `/resources` | `ResourcesPage` | `"Maelle \| Reources` |
+| `/resources` | `ResourcesPage` | `Maelle \| Reources` |
 
 ---
 
