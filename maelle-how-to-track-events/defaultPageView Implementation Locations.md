@@ -47,10 +47,10 @@ window.oneDataLayer.push({
 
 | Route | `mainCategory` | `pageTitle` |
 |-------|---------------|-------------|
-| `/` | `HomePage` | `Maelle - Your Corporate Brain` |
-| `/how-it-works` | `AboutPage` | `How it Works` |
-| `/capabilities` | `CapabilitiesPage` | `Capabilities` |
-| `/resources` | `ResourcesPage` | `Resources` |
+| `/` | `HomePage` | `Maelle \| Home` |
+| `/how-it-works` | `AboutPage` | `Maelle \| How it Works` |
+| `/capabilities` | `CapabilitiesPage` | `Maelle \| Capabilities` |
+| `/resources` | `ResourcesPage` | `"Maelle \| Reources` |
 
 ---
 
