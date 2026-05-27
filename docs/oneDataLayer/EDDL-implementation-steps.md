@@ -68,7 +68,7 @@ Push additional OneDataLayer events when a user interaction occurs, using the ma
 Example:
 
 ```javascript
-window.digitalData.push({
+window.oneDataLayer.push({
   "event": "defaultLinkClick",
   "link": {
     "url": "example.com",
