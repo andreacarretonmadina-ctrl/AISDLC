@@ -29,8 +29,6 @@ The JSON templates should continue to show payload shape and event-specific exam
 | `event` | Name of the tracking event being pushed to `oneDataLayer`. | On every tracking event. | `defaultPageView`, `defaultLinkClick`, `videoStart` | Required top-level field. |
 | `eventDetails` | Additional business or technical context for the event. | On every event, if applicable. | `registration-step-2`, `cta-variant-a` | Use when the event name alone is not enough. |
 | `timestamp` | Unix timestamp in milliseconds for when the event occurred. | On every tracking event. | `1674842407984` | Should generally be generated at event time. |
-| `timestamp_iso` | ISO 8601 version of the timestamp. | Derived field for analytics mapping. | `2023-01-27T18:00:07.984Z` | Usually derived from `timestamp`; not required in the payload unless implementation needs it. |
-| `timestamp_utcoffset` | User's local UTC offset. | Derived field for analytics mapping. | `UTC+01:00` | Usually derived from client time zone; not required in the payload unless implementation needs it. |
 | `campaign` | Campaign code from the landing URL. | On page tracking events when campaign parameters exist. | `spring_launch`, `cid=12345` | Usually sourced from URL query parameters such as UTM values or `cid`. |
 
 ---
@@ -91,7 +89,6 @@ The JSON templates should continue to show payload shape and event-specific exam
 | Field | Description | When used | Example | Notes |
 |---|---|---|---|---|
 | `content.vvpm` | Veeva PromoMats identifier of displayed or interacted content. | On tracking events where applicable. | `VVPM123456` | Populate when governed content is involved. |
-| `content.diseaseArea[]` | Disease area values related to the content. | On page or content-related events, if applicable. | `{ "id": "12345", "name": "Cancer Immunotherapy" }` | Each item should contain identifier and label when available. |
 | `content.indication[]` | Indication values related to the content. | On page or content-related events, if applicable. | `{ "id": "ROX1305277804343", "name": "Colorectal cancer" }` | Use arrays when multiple values apply. |
 | `content.therapeuticArea[]` | Therapeutic area values related to the content. | On page or content-related events, if applicable. | `{ "id": "ROX1412243655827", "name": "Oncology" }` | Use arrays when multiple values apply. |
 | `content.product[]` | Product values related to the content. | On page or content-related events, if applicable. | `{ "id": "ROX1302017050223", "name": "Avastin" }` | Content classification, not ecommerce product tracking. |
@@ -203,43 +200,19 @@ The JSON templates should continue to show payload shape and event-specific exam
 
 ---
 
-## Ecommerce and product fields
+## Ecommerce 
 
 | Field | Description | When used | Example | Notes |
 |---|---|---|---|---|
 | `ecommerce.items[].item_id` | Product identifier in ecommerce events. | On `prodView`, `scAdd`, `scView`, `scRemove`, `scCheckout`, `purchase`. | `SKU-12345` | Use ecommerce structure where feasible. |
 | `ecommerce.items[].item_name` | Product name in ecommerce events. | On ecommerce events. | `Diagnostics Kit A` | Human-friendly label. |
+
+## Product fields
+
+| Field | Description | When used | Example | Notes |
+|---|---|---|---|---|
 | `product.productId` | Product ID outside the ecommerce structure. | On product interactions when ecommerce tracking is not used. | `ROX12345` | Fallback for non-ecommerce implementations. |
 | `product.productName` | Product name outside the ecommerce structure. | On product interactions when ecommerce tracking is not used. | `Avastin` | Fallback for non-ecommerce implementations. |
 | `product.productCategory` | Product category outside the ecommerce structure. | On product interactions when ecommerce tracking is not used. | `Oncology` | Fallback for non-ecommerce implementations. |
 
 ---
-
-## Query parameter and implementation metadata
-
-| Field | Description | When used | Example | Notes |
-|---|---|---|---|---|
-| `utm.*` | Google UTM campaign parameters captured from the landing URL. | On page tracking events when present. | `utm_source`, `utm_medium`, `utm_campaign` | Can be stored individually in implementation-specific mappings. |
-| `gclid` | Google Click Identifier. | On page tracking events when present. | `EAIaIQob...` | Capture from query string. |
-| `gbraid` | Google app-to-app measurement parameter for iOS. | On page tracking events when present. | `XYZ123` | Capture from query string. |
-| `wbraid` | Google web-to-app measurement parameter for iOS. | On page tracking events when present. | `XYZ123` | Capture from query string. |
-| `bid` | Banner identifier / campaign banner parameter. | On page tracking events when present. | `1234567890` | Capture from query string. |
-| `analytics.reportSuiteId` | Adobe Analytics report suite ID. | On tracking events where implementation metadata is collected. | `reportsuite1,rocheone` | Implementation metadata, not business behavior. |
-| `analytics.trackingServer` | Analytics tracking server. | On tracking events where implementation metadata is collected. | `smetrics.roche.com` | Implementation metadata. |
-| `tagManager.propertyId` | Adobe Launch property ID. | On tracking events where implementation metadata is collected. | `PRbe71b6b1fe854f3c8d67283236794a8f` | Implementation metadata. |
-| `tagManager.environment` | Tag manager environment. | On tracking events where implementation metadata is collected. | `development`, `production` | Implementation metadata. |
-| `tagManager.version` | Build date or version of the tag manager bundle. | On tracking events where implementation metadata is collected. | `2023-02-21T11:31:32Z` | Implementation metadata. |
-| `implementation.dataScope` | Scope/source of data collection. | On tracking events where implementation metadata is collected. | `oneDataLayer`, `No Data Layer` | Implementation metadata. |
-| `implementation.method` | Tracking implementation method. | On tracking events where implementation metadata is collected. | `AEP Web SDK Comprehensive`, `AppMeasurement` | Implementation metadata. |
-| `implementation.trackingMode` | Tracking mode based on user choice or implementation level. | On tracking events where implementation metadata is collected. | `Comprehensive Basic`, `Comprehensive Enhanced`, `Adobe Native` | Implementation metadata. |
-
----
-
-## Recommended next step
-
-After maintaining this shared dictionary, each JSON template in `docs/oneDataLayer/templates/` should only include event-specific guidance or comments for fields that are:
-- required for that event
-- optional but recommended
-- ambiguous without extra context
-
-This keeps the templates readable while ensuring every variable has a documented meaning in one place.
