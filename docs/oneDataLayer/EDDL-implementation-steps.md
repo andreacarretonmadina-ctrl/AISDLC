@@ -44,7 +44,6 @@ Example pattern:
 ```
 
 ## 3. Push a page-view event
-
 Push `defaultPageView` once the page metadata needed for tracking is ready.
 
 ```javascript
@@ -64,7 +63,6 @@ window.oneDataLayer.push({
 ```
 
 ## 4. Push interaction events
-
 Push additional OneDataLayer events when a user interaction occurs, using the matching event template from `docs/oneDataLayer/templates/`.
 
 Example:
