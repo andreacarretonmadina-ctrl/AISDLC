@@ -28,7 +28,7 @@ The templates in this repository show a recurring set of top-level objects:
     "siteName": "Portal",
     "sysEnv": "QA",
     "market": "ES",
-    "language": "es-ES",
+    "language": "es",
     "url": "https://navifyportal-qa.roche.com/es/es-es/dashboard",
     "path": "es/es-es/dashboard",
     "pageTitle": "Portal Dashboard",

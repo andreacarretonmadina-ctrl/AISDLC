@@ -29,7 +29,7 @@ window.oneDataLayer.push({
   "event": "defaultPageView",
   "page": {
     "pageName": "Product Page | Shoes",
-    "MainCategory": "E-commerce",
+    "mainCategory": "E-commerce",
     "language": "en"
   },
   "user": {
@@ -44,7 +44,7 @@ window.oneDataLayer.push({
 When a user interacts with your website (e.g., clicks "add to cart" or submits a form), push only the relevant event data and properties.
 
 ```javascript
-window.digitalData.push({
+window.oneDataLayer.push({
   "event": "defaultLinkClick",
   "link": {
     "url": "example.com",
