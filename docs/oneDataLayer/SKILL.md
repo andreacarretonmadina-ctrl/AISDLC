@@ -129,16 +129,28 @@ Before shipping:
 
 ## Adobe Analytics Onboarding (New Websites)
 
-1. Submit ServiceNow request for Report Suite inclusion
-2. Install Adobe Launch script (correct environment)
-3. Receive approval
-4. Add CSP directives
-5. Initialize `window.oneDataLayer`
-6. Implement event pushes
-7. Request validation from Analytics Team
-8. Receive confirmation & go live
+The ServiceNow request and the technical implementation run **in parallel**. You do **not** need to wait for ServiceNow approval to install the Adobe Launch script — the ServiceNow ticket team actually needs the script already deployed in staging/QA to validate it.
 
-> ⚠️ Do not go live until the Analytics Team confirms the implementation is correct.
+There are **two distinct validations** performed by **two different teams**. Both must be passed before going live in Production.
+
+**Parallel tracks:**
+
+1. Submit ServiceNow request for Report Suite inclusion *(Track A)*
+2. Install Adobe Launch **non-prod** script in staging/QA *(Track B — in parallel with #1)*
+3. Add CSP directives
+4. Initialize `window.oneDataLayer`
+5. Implement event pushes
+
+**Validations (two separate teams):**
+
+6. 🎫 **ServiceNow ticket team validates the script implementation** — triggered as soon as the non-prod script is live in staging/QA; does **not** require events to be implemented
+7. 📊 **Analytics Team validates events in the Adobe Analytics console** — triggered once `oneDataLayer` events are implemented in staging/QA
+
+**Go live:**
+
+8. Switch to the **production** Launch script & go live
+
+> ⚠️ **Both validations are hard gates.** Do not go live in Production until **both** the ServiceNow ticket team and the Analytics Team have confirmed their respective validations.
 
 ## When Answering Questions
 
