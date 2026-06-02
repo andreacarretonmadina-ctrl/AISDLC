@@ -122,8 +122,8 @@ Before shipping:
 ## Adobe Analytics Onboarding (New Websites)
 
 1. Submit ServiceNow request for Report Suite inclusion
-2. Receive approval
-3. Install Adobe Launch script (correct environment)
+2. Install Adobe Launch script (correct environment)
+3. Receive approval
 4. Add CSP directives
 5. Initialize `window.oneDataLayer`
 6. Implement event pushes
