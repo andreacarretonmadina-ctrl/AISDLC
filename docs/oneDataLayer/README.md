@@ -2,7 +2,7 @@
 
 ## What is oneDataLayer / EDDL?
 
-`window.oneDataLayer` is Roche's **Event-Driven Data Layer (EDDL)** — a client-side JavaScript array used as a standardised event queue for analytics. Developers push structured JSON objects into the array; Adobe Launch listens and forwards data to Adobe Analytics and other downstream tools.
+`window.oneDataLayer` is Roche's **Event-Driven Data Layer (EDDL)** — a client-side JavaScript array used as a standardised event queue for analytics. Developers push structured JSON event objects into the array, and Adobe Launch (or any other tag manager / analytics consumer) reads from the queue to forward the events to downstream tools such as Adobe Analytics.
 
 This folder contains everything needed to implement, validate, and maintain oneDataLayer tracking across any Roche web property.
 
@@ -12,25 +12,27 @@ This folder contains everything needed to implement, validate, and maintain oneD
 
 ```
 docs/oneDataLayer/
-├── SKILL.md                         # AI skill definition for Copilot
-├── README.md                        # This file — navigation index
-├── overview.md                      # High-level EDDL concept overview
-├── what-is-EDDL-and-how-it-works.md # Deep-dive into EDDL mechanics
-├── when-to-fire-each-event.md       # Event timing and trigger rules
-├── validation-and-qa-rules.md       # QA checklist and validation guidance
-├── troubleshooting.md               # Common issues and fixes
-├── CHANGELOG.md                     # Version history
-├── implementation/                  # Step-by-step implementation guides
-│   ├── adobe-launch-setup.md
-│   ├── script-implementation.md
-│   └── eddl-steps.md
-├── properties/                      # Data dictionary and dimensions/metrics
+├── SKILL.md                                  # AI skill definition for Copilot
+├── README.md                                 # This file — navigation index
+├── overview.md                               # High-level EDDL concept overview
+├── what-is-EDDL-and-how-it-works.md          # Deep-dive into EDDL mechanics
+├── when-to-fire-each-event.md                # Event timing and trigger rules
+├── validation-and-qa-rules.md                # QA checklist and validation guidance
+├── test-suite.md                             # Test suite for EDDL implementations
+├── troubleshooting.md                        # Common issues and fixes
+├── CHANGELOG.md                              # Version history
+├── implementation/                           # Step-by-step implementation guides
+│   ├── adobe-analytics-set-up-for-new-websites.md
+│   ├── adobe-script-implementation.md
+│   └── eddl-implementation-steps.md
+├── properties/                               # Data dictionary and dimensions/metrics
 │   ├── data-dictionary.md
-│   └── dimensions-metrics-mapping.md
-└── templates/                       # Canonical JSON event templates
-    ├── audioProgress.json           # ✅ Use this (valid JSON)
-    ├── audioProgress.jsonc          # ⚠️ Legacy — use audioProgress.json instead
-    └── ... (30+ event templates)
+│   ├── adobe-analytics-dimensions-mapping.md
+│   └── adobe-analytics-metrics-mapping.md
+└── templates/                                # Canonical JSON event templates
+    ├── audioProgress.json                    # ✅ Use this (valid JSON)
+    ├── audioProgress.jsonc                   # ⚠️ Legacy — use audioProgress.json instead
+    └── ... (35 .json templates + 1 .jsonc legacy file)
 ```
 
 ---
@@ -44,14 +46,16 @@ docs/oneDataLayer/
 | `what-is-EDDL-and-how-it-works.md` | Detailed explanation of how the data layer works end-to-end |
 | `when-to-fire-each-event.md` | Rules for when each event type should be triggered |
 | `validation-and-qa-rules.md` | Validation checklist and QA process |
+| `test-suite.md` | Test suite for verifying EDDL implementations |
 | `troubleshooting.md` | Solutions to common implementation issues |
 | `CHANGELOG.md` | History of changes to this documentation set |
-| `implementation/adobe-launch-setup.md` | How to set up Adobe Launch for a new property |
-| `implementation/script-implementation.md` | Script installation and initialisation patterns |
-| `implementation/eddl-steps.md` | Step-by-step EDDL implementation walkthrough |
+| `implementation/adobe-analytics-set-up-for-new-websites.md` | How to set up Adobe Analytics / Launch for a new property |
+| `implementation/adobe-script-implementation.md` | Script installation and initialisation patterns |
+| `implementation/eddl-implementation-steps.md` | Step-by-step EDDL implementation walkthrough |
 | `properties/data-dictionary.md` | Full data dictionary for all EDDL fields |
-| `properties/dimensions-metrics-mapping.md` | Mapping of EDDL fields to Adobe Analytics dimensions/metrics |
-| `templates/` | 30+ canonical JSON templates for every supported event type |
+| `properties/adobe-analytics-dimensions-mapping.md` | Mapping of EDDL fields to Adobe Analytics dimensions (eVars / props) |
+| `properties/adobe-analytics-metrics-mapping.md` | Mapping of EDDL fields to Adobe Analytics metrics (events) |
+| `templates/` | 35 canonical JSON templates (plus 1 legacy `.jsonc`) for every supported event type |
 
 ---
 
