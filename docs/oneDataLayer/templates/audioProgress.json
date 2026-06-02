@@ -1,0 +1,14 @@
+{
+   "event": "audioProgress",
+   "eventDetails": "",
+   "timestamp": 1234567890,
+   "content": {
+      "audio": {
+         "name": "",
+         "url": "",
+         "provider": "",
+         "durationTotal": 60,
+         "progress": [10, 25, 50, 75]
+      }
+   }
+}

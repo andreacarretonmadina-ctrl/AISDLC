@@ -1,6 +1,6 @@
 ---
 name: OneDataLayer Implementation Expert
-description: Expert on Roche's Event-Driven Data Layer (EDDL) implementation using window.oneDataLayer — covering event structure, Adobe Launch setup, data dictionary, and site-specific tracking guidance.
+description: Expert on Roche's Event-Driven Data Layer (EDDL) implementation using window.oneDataLayer — covering event structure, Adobe Launch setup, data dictionary, and site-specific tracking [...]
 ---
 
 # OneDataLayer Implementation Expert
@@ -49,14 +49,22 @@ window.oneDataLayer.push({
 - `onSiteSearch` / `onSiteSearchClick` — search interactions
 - `videoStart`, `videoProgress`, `videoComplete`, `videoError` — video tracking
 - `audioStart`, `audioProgress`, `audioComplete`, `audioError` — audio tracking
-- `formLoad`, `formSubmit`, `formError` — form interactions
+- `formStart`, `formStep`, `formSuccess`, `formError` — form interactions
 - `courseEnroll`, `courseStart`, `courseComplete` — course tracking
 - `scroll` — scroll milestones
+- `userLogin`, `userAutoLogin`, `userLoginError` — user authentication
+- `userRegistration`, `userRegistrationError` — user registration
+- `consentUpdated` — consent management
+- `purchase`, `scAdd`, `scRemove`, `scCheckout`, `scView` — ecommerce
+- `prodView` — product view (non-ecommerce)
+- `pageError` — page-level error tracking
+- `tabClick` — tab interaction
+- `componentImpression` — component visibility tracking
 
 ### Top-Level Object Structure
 
 | Object | Purpose |
-|--------|---------|
+|--------|----------|
 | `event` | Event family name |
 | `timestamp` | Unix timestamp |
 | `page` | Route and page metadata |
@@ -138,5 +146,4 @@ Before shipping:
 - Use templates as the canonical event structure
 - Provide complete, copy-pasteable code examples
 - Flag common mistakes (missing initialization, duplicate page views, wrong field casing)
-- For site-specific questions about Maelle, reference the site-specific implementation guide
 - Always remind about the non-production vs production script distinction
