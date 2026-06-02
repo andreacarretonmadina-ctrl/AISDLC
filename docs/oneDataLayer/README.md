@@ -20,7 +20,6 @@ docs/oneDataLayer/
 ├── validation-and-qa-rules.md                # QA checklist and validation guidance
 ├── test-suite.md                             # Test suite for EDDL implementations
 ├── troubleshooting.md                        # Common issues and fixes
-├── CHANGELOG.md                              # Version history
 ├── implementation/                           # Step-by-step implementation guides
 │   ├── adobe-analytics-set-up-for-new-websites.md
 │   ├── adobe-script-implementation.md
@@ -48,7 +47,6 @@ docs/oneDataLayer/
 | `validation-and-qa-rules.md` | Validation checklist and QA process |
 | `test-suite.md` | Test suite for verifying EDDL implementations |
 | `troubleshooting.md` | Solutions to common implementation issues |
-| `CHANGELOG.md` | History of changes to this documentation set |
 | `implementation/adobe-analytics-set-up-for-new-websites.md` | How to set up Adobe Analytics / Launch for a new property |
 | `implementation/adobe-script-implementation.md` | Script installation and initialisation patterns |
 | `implementation/eddl-implementation-steps.md` | Step-by-step EDDL implementation walkthrough |
