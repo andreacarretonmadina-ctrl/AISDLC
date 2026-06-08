@@ -59,7 +59,10 @@ Use the repository assets together:
 
 - `templates/`
 
-Templates define the shape. Examples show realistic combinations of values.
+Templates define the shape. Examples show realistic combinations of values. Templates show the full standard structure and available fields for an event. Not every field shown in a template is mandatory in every implementation context unless explicitly required by documentation.
+
+e.g. eventDetails appears in many templates but is optional unless a use case requires additional context.
+
 
 ## Guidance For Implementers
 

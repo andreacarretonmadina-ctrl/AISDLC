@@ -14,6 +14,7 @@ This guide explains how to implement Roche's Event-Driven Data Layer (EDDL) usin
 
 Applications should push structured event objects into `window.oneDataLayer` so tracking remains consistent across websites, SPAs, and widgets.
 
+
 ## 1. Initialize the data layer
 
 Initialize the array as early as possible in the `<head>` and before any event pushes:

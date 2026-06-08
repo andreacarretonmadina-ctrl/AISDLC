@@ -19,7 +19,7 @@ This document maps OneDataLayer properties to Adobe Analytics variables (props, 
 |-----------|-------------|--------------|-------------|----------------|------------|------------|
 | Campaign | Campaign Code | On every page tracking event | URL query string parameter | `campaign` | Most Recent (Last) | 30 days |
 | Event Name | The name of the Tracking Event | On every tracking event | `oneDataLayer[].event` | `prop1` | — | — |
-| Event Details | Context about the interaction beyond event name | On every event, if applicable | `oneDataLayer[].eventDetails` | `eVar66` | Most Recent (Last) | Hit |
+| Event Details | Captures information about the event that provides business or technical context about the interaction beyond the event name and type itself. | On every event, if applicable | `oneDataLayer[].eventDetails` | `eVar66` | Most Recent (Last) | Hit |
 
 ---
 
