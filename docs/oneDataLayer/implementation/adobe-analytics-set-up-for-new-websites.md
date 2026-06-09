@@ -21,6 +21,12 @@ Before tracking data can flow from your website to Adobe Analytics, two things m
 
 > ✅ **These two tracks run in parallel.** You do **not** need to wait for the ServiceNow request to be approved before installing the script. In fact, the ServiceNow ticket team needs the script already deployed in staging/QA in order to validate it.
 
+## Prerequisites
+
+> 🚨 **OneTrust Integration (Mandatory)**
+>
+> All websites that want to use Adobe Analytics as their tracking tool **must** have [OneTrust](https://www.onetrust.com/) integrated. Adobe Analytics is configured so that without OneTrust, tracking will not work. Ensure OneTrust is implemented before expecting any data to flow.
+
 ---
 
 ## Step 1 — Request Report Suite Inclusion *(in parallel with Steps 2–3)*
@@ -41,6 +47,7 @@ Submit a request to add your website to the Roche Adobe Report Suite via Service
 
 > 🚀 You can start Steps 2 and 3 immediately — there is no need to wait for the ServiceNow request to be approved.
 
+> 🔑 **Need Adobe Analytics access?** In order to get Adobe Analytics access, a user can create a ServiceNow ticket using [this link](https://roche.service-now.com/rose?id=sc_cat_item_guide&sys_id=edc527858790b918ceae87340cbb35c0).
 ---
 
 ## Step 2 — Install the Adobe Launch Script *(in parallel with Step 1)*
