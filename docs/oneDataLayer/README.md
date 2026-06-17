@@ -14,8 +14,7 @@ This folder contains everything needed to implement, validate, and maintain oneD
 docs/oneDataLayer/
 ├── SKILL.md                                  # AI skill definition for Copilot
 ├── README.md                                 # This file — navigation index
-├── overview.md                               # High-level EDDL concept overview
-├── what-is-EDDL-and-how-it-works.md          # Deep-dive into EDDL mechanics
+├── overview.md                               # What is EDDL, how it works, and how to push events
 ├── when-to-fire-each-event.md                # Event timing and trigger rules
 ├── validation-and-qa-rules.md                # QA checklist and validation guidance
 ├── troubleshooting.md                        # Common issues and fixes
@@ -40,8 +39,7 @@ docs/oneDataLayer/
 | File | Description |
 |------|-------------|
 | `SKILL.md` | AI skill definition — the authoritative source of truth for Copilot on oneDataLayer |
-| `overview.md` | High-level introduction to EDDL and its purpose |
-| `what-is-EDDL-and-how-it-works.md` | Detailed explanation of how the data layer works end-to-end |
+| `overview.md` | What is EDDL, how it works, how to push events, and structural guidance |
 | `when-to-fire-each-event.md` | Rules for when each event type should be triggered |
 | `validation-and-qa-rules.md` | Validation checklist and QA process |
 | `troubleshooting.md` | Solutions to common implementation issues |

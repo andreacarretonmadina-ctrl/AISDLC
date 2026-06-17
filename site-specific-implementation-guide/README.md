@@ -64,7 +64,6 @@ This folder complements, but does not replace, the central tracking documentatio
 Before using site-specific examples, review the shared standards in:
 
 - [`docs/oneDataLayer/overview.md`](../docs/oneDataLayer/overview.md)
-- [`docs/oneDataLayer/what-is-EDDL-and-how-it-works.md`](../docs/oneDataLayer/what-is-EDDL-and-how-it-works.md)
 - [`docs/oneDataLayer/EDDL-implementation-steps.md`](../docs/oneDataLayer/EDDL-implementation-steps.md)
 - [`docs/oneDataLayer/when-to-fire-each-event.md`](../docs/oneDataLayer/when-to-fire-each-event.md)
 - [`docs/oneDataLayer/data-dictionary.md`](../docs/oneDataLayer/data-dictionary.md)

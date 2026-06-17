@@ -37,7 +37,6 @@ Guidance for implementing Roche’s Event-Driven Data Layer using `window.oneDat
 Start with:
 
 - [Overview](./oneDataLayer/overview.md)
-- [What is EDDL and how it works](./oneDataLayer/what-is-EDDL-and-how-it-works.md)
 - [Implementation steps](./oneDataLayer/EDDL-implementation-steps.md)
 - [When to fire each event](./oneDataLayer/when-to-fire-each-event.md)
 - [Data dictionary](./oneDataLayer/data-dictionary.md)
@@ -84,10 +83,9 @@ See:
 
 ### For tracking implementation
 1. [OneDataLayer Overview](./oneDataLayer/overview.md)
-2. [What is EDDL and how it works](./oneDataLayer/what-is-EDDL-and-how-it-works.md)
-3. [Implementation steps](./oneDataLayer/EDDL-implementation-steps.md)
-4. [When to fire each event](./oneDataLayer/when-to-fire-each-event.md)
-5. [Data dictionary](./oneDataLayer/data-dictionary.md)
+2. [Implementation steps](./oneDataLayer/EDDL-implementation-steps.md)
+3. [When to fire each event](./oneDataLayer/when-to-fire-each-event.md)
+4. [Data dictionary](./oneDataLayer/data-dictionary.md)
 
 ### For shared standards and architecture
 1. Choose the relevant domain folder under `docs/`

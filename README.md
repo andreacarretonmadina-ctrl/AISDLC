@@ -43,7 +43,6 @@ This repository is intended for:
 Start with:
 
 - [OneDataLayer Overview](docs/oneDataLayer/overview.md)
-- [What is EDDL and how it works](docs/oneDataLayer/what-is-EDDL-and-how-it-works.md)
 - [EDDL Implementation Steps](docs/oneDataLayer/EDDL-implementation-steps.md)
 - [When to fire each event](docs/oneDataLayer/when-to-fire-each-event.md)
 - [Data Dictionary](docs/oneDataLayer/data-dictionary.md)
@@ -92,10 +91,9 @@ AISDLC_data/
 Use this reading order for tracking implementations:
 
 1. `docs/oneDataLayer/overview.md`
-2. `docs/oneDataLayer/what-is-EDDL-and-how-it-works.md`
-3. `docs/oneDataLayer/EDDL-implementation-steps.md`
-4. `docs/oneDataLayer/when-to-fire-each-event.md`
-5. `docs/oneDataLayer/templates/`
+2. `docs/oneDataLayer/EDDL-implementation-steps.md`
+3. `docs/oneDataLayer/when-to-fire-each-event.md`
+4. `docs/oneDataLayer/templates/`
 6. `docs/oneDataLayer/data-dictionary.md`
 
 For Adobe onboarding:

@@ -8,7 +8,7 @@ owner: Analytics Team/ Developers Team
 # Adobe Launch Script Installation
 
 > **Audience:** Front-end developers implementing Maelle tracking on Roche web properties.
-> **Prerequisites:** Access to the website's HTML `<head>`. See [EDDL Overview](what-is-eddl-and-how-it-works.md) for context.
+> **Prerequisites:** Access to the website's HTML `<head>`. See [EDDL Overview](../overview.md) for context.
 
 To enable the **oneDataLayer (ODL)** on your website, you must include the **Adobe Launch** script on every page.
 
@@ -46,7 +46,7 @@ To enable the **oneDataLayer (ODL)** on your website, you must include the **Ado
 |------|---------|
 | **One script per environment** | Never include both Production and Non-Production scripts on the same page |
 | **Placement** | Must be as high in `<head>` as possible to avoid race conditions |
-| **`async` attribute** | The script loads asynchronously — see [EDDL Overview](what-is-eddl-and-how-it-works.md#asynchronous-loading) for how this works with `oneDataLayer` |
+| **`async` attribute** | The script loads asynchronously — see [EDDL Overview](../overview.md#how-it-works) for how this works with `oneDataLayer` |
 | **Every page** | The script must be present on **all** pages, including SPA route changes if using a traditional `<head>` injection |
 
 ---

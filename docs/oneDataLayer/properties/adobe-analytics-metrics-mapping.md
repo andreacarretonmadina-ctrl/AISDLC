@@ -48,10 +48,10 @@ This document maps OneDataLayer events to Adobe Analytics event variables (metri
 
 | Metric | Description | When to Fire | Adobe Event | Type |
 |--------|-------------|--------------|-------------|------|
-| Searches | All onsite searches | On `onsiteSearch` | `event13` | Counter |
-| Nullsearches | Searches with 0 results | On `onsiteSearch` with results = 0 | `event14` | Counter |
-| Search Results Amount | Number of results (numeric) | On `onsiteSearch` / `onsiteSearchClick` | `event15` | Numeric |
-| Search Results Clicks | Clicks on search results | On `onsiteSearchClick` | `event89` | Counter |
+| Searches | All onsite searches | On `onSiteSearch` | `event13` | Counter |
+| Nullsearches | Searches with 0 results | On `onSiteSearch` with results = 0 | `event14` | Counter |
+| Search Results Amount | Number of results (numeric) | On `onSiteSearch` / `onSiteSearchClick` | `event15` | Numeric |
+| Search Results Clicks | Clicks on search results | On `onSiteSearchClick` | `event89` | Counter |
 
 ---
 

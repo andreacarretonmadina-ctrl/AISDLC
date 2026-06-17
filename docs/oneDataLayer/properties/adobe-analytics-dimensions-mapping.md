@@ -127,10 +127,10 @@ These dimensions use **list1** with `,` delimiter, Hit expiration, Full allocati
 
 | Dimension | Data Source | Adobe Variable | Events |
 |-----------|-------------|----------------|--------|
-| Search Term | `oneDataLayer[].content.onsiteSearch.term` | `eVar7` | `onsiteSearch`, `onsiteSearchClick` |
-| Search Component | `oneDataLayer[].content.onsiteSearch.searchComponent` | `eVar29` | `onsiteSearch`, `onsiteSearchClick` |
-| Search Results Amount | `oneDataLayer[].content.onsiteSearch.results` | `eVar6` | `onsiteSearch`, `onsiteSearchClick` |
-| Search Result Position | `content.onsiteSearch.resultPosition` | `eVar5` | `onsiteSearchClick` |
+| Search Term | `oneDataLayer[].content.onsiteSearch.term` | `eVar7` | `onSiteSearch`, `onSiteSearchClick` |
+| Search Component | `oneDataLayer[].content.onsiteSearch.searchComponent` | `eVar29` | `onSiteSearch`, `onSiteSearchClick` |
+| Search Results Amount | `oneDataLayer[].content.onsiteSearch.results` | `eVar6` | `onSiteSearch`, `onSiteSearchClick` |
+| Search Result Position | `content.onsiteSearch.resultPosition` | `eVar5` | `onSiteSearchClick` |
 
 ---
 
