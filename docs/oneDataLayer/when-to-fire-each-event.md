@@ -36,8 +36,8 @@ This table defines every event type supported by OneDataLayer and the exact mome
 
 | Event | When to Fire |
 |-------|-------------|
-| `onsiteSearch` | On search results page or search/filter update. To indicate which search component was used, set `content.onsiteSearch.searchComponent` (e.g., `"search-bar-header"` or `"search-bar-header-search-suggestion"`). |
-| `onsiteSearchClick` | On click on a search result. To indicate which search component was used, set `content.onsiteSearch.searchComponent` (e.g., `"search-bar-header"` or `"search-bar-header-result-suggestion"`). |
+| `onSiteSearch` | On search results page or search/filter update. To indicate which search component was used, set `content.onsiteSearch.searchComponent` (e.g., `"search-bar-header"` or `"search-bar-header-search-suggestion"`). |
+| `onSiteSearchClick` | On click on a search result. To indicate which search component was used, set `content.onsiteSearch.searchComponent` (e.g., `"search-bar-header"` or `"search-bar-header-result-suggestion"`). |
 
 ## Form Events
 

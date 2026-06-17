@@ -18,7 +18,6 @@ docs/oneDataLayer/
 ├── what-is-EDDL-and-how-it-works.md          # Deep-dive into EDDL mechanics
 ├── when-to-fire-each-event.md                # Event timing and trigger rules
 ├── validation-and-qa-rules.md                # QA checklist and validation guidance
-├── test-suite.md                             # Test suite for EDDL implementations
 ├── troubleshooting.md                        # Common issues and fixes
 ├── implementation/                           # Step-by-step implementation guides
 │   ├── adobe-analytics-set-up-for-new-websites.md
@@ -45,7 +44,6 @@ docs/oneDataLayer/
 | `what-is-EDDL-and-how-it-works.md` | Detailed explanation of how the data layer works end-to-end |
 | `when-to-fire-each-event.md` | Rules for when each event type should be triggered |
 | `validation-and-qa-rules.md` | Validation checklist and QA process |
-| `test-suite.md` | Test suite for verifying EDDL implementations |
 | `troubleshooting.md` | Solutions to common implementation issues |
 | `implementation/adobe-analytics-set-up-for-new-websites.md` | How to set up Adobe Analytics / Launch for a new property |
 | `implementation/adobe-script-implementation.md` | Script installation and initialisation patterns |

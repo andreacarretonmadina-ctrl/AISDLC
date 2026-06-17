@@ -10,7 +10,7 @@ OneDataLayer is the shared analytics data model used by this repository. It defi
 
 The templates in this repository show a recurring set of top-level objects:
 
-- `event`: the event family name, such as `defaultPageView` or `onsiteSearchClick`
+- `event`: the event family name, such as `defaultPageView` or `onSiteSearchClick`
 - `timestamp`: when the event happened (Unix milliseconds)
 - `page`: route and page metadata when the event is page-related
 - `content`: content and search metadata when the event is content-related
@@ -39,7 +39,7 @@ The templates in this repository show a recurring set of top-level objects:
     "isLoggedIn": 1
   },
   "components": {
-    "embeds ": {
+    "embeds": {
       "items": []
     }
   }

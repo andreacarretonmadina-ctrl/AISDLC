@@ -63,7 +63,7 @@ window.oneDataLayer.push({
   "event": "defaultPageView",
   "page": {
     "pageName": "Product Page | Shoes",
-    "MainCategory": "E-commerce",
+    "mainCategory": "E-commerce",
     "language": "en"
   },
   "user": {

@@ -37,7 +37,7 @@ For staging/QA use `launch-3cdcd1196ea2-staging.min.js`. Never load both scripts
 window.oneDataLayer = window.oneDataLayer || [];
 window.oneDataLayer.push({
   event: "eventName",
-  timestamp: Math.floor(Date.now() / 1000),
+  timestamp: Date.now(),
   // ...event-specific fields
 });
 ```
