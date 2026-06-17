@@ -53,22 +53,12 @@ https://assets.adobedtm.com/9215900255c9/17f1b4dd3439/launch-*.min.js
 
 ### 3. Verify Adobe Analytics Server Calls
 
-In Adobe Debugger or Network tab, filter for requests to `*.2o7.net` or `*.omtrdc.net`.
+To debug a site with a clean browser cache and no leftover cookies, it is strongly recommended to close all open incognito mode windows (if they are in use) and open a new incognito window.
 
-**For each server call, validate:**
-
-| Field | Network Parameter | What to Check |
-|-------|-------------------|---------------|
-| Page Name | `pageName` | Matches `oneDataLayer[].page.pageName` |
-| Channel | `ch` | Matches `oneDataLayer[].page.mainCategory` |
-| Server | `server` | Matches `oneDataLayer[].page.domain` |
-| Campaign | `v0` | Present only with URL campaign parameters |
-| Events | `events` | Correct event codes fire (see metrics mapping) |
-| Props | `c1`, `c2`, etc. | Match expected prop values |
-| eVars | `v3`, `v4`, etc. | Match expected eVar values |
-| Products | `products` | Correct syntax for e-commerce hits |
-| Hier | `h1`, `h2` | Path/category hierarchy correct |
-| List vars | `l1`, `l2`, `l3` | Correct delimiter and format |
+1. Visit the page where you want to test the EDDL implementation.
+2. Open your browser's dev tools, either by pressing **F12** or from the browser menu.
+3. In the Dev Tools, switch to the **Console** tab.
+4. Type `oneDataLayer` in the console and press **Enter**. If EDDL is implemented with the correct name, the returned object will display the events and context data.
 
 ---
 
@@ -85,36 +75,6 @@ In Adobe Debugger or Network tab, filter for requests to `*.2o7.net` or `*.omtrd
 | Events fire before `defaultPageView` | Broken pathing in Adobe | Ensure page view is always first |
 | Non-English values | Inconsistent reporting | Use English except for market-specific content |
 | Multiple Adobe Launch scripts | Double-counting | Only one script per environment |
-
----
-
-## Automated Checks (CI/QA)
-
-If integrating into automated testing:
-
-```javascript
-// Example: Validate oneDataLayer structure after page load
-function validateODL() {
-    const odl = window.oneDataLayer || [];
-    const pageView = odl.find(e => e.event === 'defaultPageView');
-    
-    const errors = [];
-    
-    if (!pageView) errors.push('Missing defaultPageView event');
-    if (!pageView?.page?.pageName) errors.push('Missing pageName');
-    if (!pageView?.page?.market) errors.push('Missing market');
-    if (!pageView?.page?.language) errors.push('Missing language');
-    if (!pageView?.page?.siteName) errors.push('Missing siteName');
-    if (!pageView?.timestamp) errors.push('Missing timestamp');
-    
-    // Page view should be first event
-    if (odl[0]?.event !== 'defaultPageView') {
-        errors.push('defaultPageView is not the first event');
-    }
-    
-    return errors;
-}
-```
 
 ---
 
