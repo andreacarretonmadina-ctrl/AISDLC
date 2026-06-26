@@ -1,4 +1,4 @@
-## How to implement `defaultLinkClick` on Maelle
+# How to implement `defaultLinkClick` on Maelle
 
 ## 1. Event schema
 
@@ -26,7 +26,7 @@ window.oneDataLayer.push({
 | Field | Type | Dynamic? | Resolution Logic | Example |
 |-------|------|----------|------------------|---------|
 | `link.url` | `string` | ✅ Dynamic | `element.href` — full destination URL | `"https://…/how-it-works"` |
-| `link.domain` | `string` | ✅ Dynamic | `new URL(element.href).origin` | `"https://probable-adventure-1qg1yjl.pages.github.io"` |
+| `link.domain` | `string` | ✅ Dynamic | `new URL(element.href).origin` | `"https://maelle.dev.nax.navify.com"` |
 | `link.path` | `string` | ✅ Dynamic | `new URL(element.href).pathname` | `"/how-it-works"` |
 | `link.innerText` | `string` | ✅ Dynamic | `element.innerText.trim()` — visible label of the clicked element | `"Learn more"` |
 | `link.position` | `string` | ❌ Static per element | Set via `data-tracking-position` attribute. Identifies where on the page the element lives. | `"hero"`, `"navBar/header"` |
@@ -72,7 +72,7 @@ Dynamic fields (`link.url`, `link.domain`, `link.path`, `link.innerText`) are re
 <a
   data-tracking-position="hero"
   data-tracking-type="button"
-  href="https://maelle.roche.com"
+  href="https://maelle.dev.nax.navify.com"
 >
   Access Maelle
 </a>
@@ -108,8 +108,8 @@ The expected event payloads per page are defined in:
 1. `defaultPageView` **must** have fired before any `defaultLinkClick` on the same page.
 2. Fire exactly **once per user click** — debounce or guard against duplicates.
 3. Do **not** include a `page` object in the push.
-6. `link.url`, `link.domain`, `link.path`, and `link.innerText` are resolved from the DOM element at click time.
-7. **Conflict resolution:** if this document and the JSON payload files differ, the JSON files win for structure and values.
+4. `link.url`, `link.domain`, `link.path`, and `link.innerText` are resolved from the DOM element at click time.
+5. **Conflict resolution:** if this document and the JSON payload files differ, the JSON files win for structure and values.
 
 ---
 
