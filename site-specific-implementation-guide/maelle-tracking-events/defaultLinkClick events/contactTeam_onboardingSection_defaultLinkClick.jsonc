@@ -2,9 +2,9 @@
 "event":"defaultLinkClick",
 "timestamp":1234567890,
 "link":{
-"url":"https://probable-adventure-1qg1yjl.pages.github.io/#contact",
-"domain":"https://probable-adventure-1qg1yjl.pages.github.io",
-"path":"/#contact",
+"url":"https://maelle.dev.nax.navify.com/maelle#contact",
+"domain":"https://maelle.dev.nax.navify.com",
+"path":"/maelle#contact",
 "innerText": "Talk to our team",
 "type":"link"
  }
