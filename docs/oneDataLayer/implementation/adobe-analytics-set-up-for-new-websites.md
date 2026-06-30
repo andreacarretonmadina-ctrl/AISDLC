@@ -25,7 +25,11 @@ Before tracking data can flow from your website to Adobe Analytics, two things m
 
 > 🚨 **OneTrust Integration (Mandatory)**
 >
-> All websites that want to use Adobe Analytics as their tracking tool **must** have [OneTrust](https://www.onetrust.com/) integrated. Adobe Analytics is configured so that without OneTrust, tracking will not work. Ensure OneTrust is implemented before expecting any data to flow.
+> All websites that want to use Adobe Analytics as their tracking tool **must** have **OneTrust integrated and consent-gated**. Adobe Analytics is configured so that without OneTrust consent, tracking will not work — events will not appear in the platform.
+>
+> Adobe cookies must be mapped to the **Performance / Analytical** category (`C0002`) in your OneTrust tenant, and the Adobe Launch script must only fire once the user has consented to `C0002`.
+>
+> 👉 Follow the [OneTrust Setup for Adobe Analytics](onetrust-setup.md) guide **before** starting the steps below.
 
 ---
 
